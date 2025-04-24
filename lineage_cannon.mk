@@ -23,6 +23,5 @@ PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="cannong-user 12 SP1A.210812.016 V14.0.4.0.SJEMIXM release-keys"
-
-BUILD_FINGERPRINT := Redmi/cannong_global/cannong:12/SP1A.210812.016/V14.0.4.0.SJEMIXM:user/release-keys
+    BuildDesc="cannong-user 12 SP1A.210812.016 V14.0.4.0.SJEMIXM release-keys"
+	BuildFingerprint=Redmi/cannong_global/cannong:12/SP1A.210812.016/V14.0.4.0.SJEMIXM:user/release-keys
