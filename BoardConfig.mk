@@ -96,7 +96,6 @@ TARGET_COPY_OUT_VENDOR := vendor
 # Platform
 TARGET_BOARD_PLATFORM := mt6853
 BOARD_HAS_MTK_HARDWARE := true
-BOARD_HAVE_MTK_FM := true
 
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/sys/touchpanel/double_tap"
@@ -107,6 +106,7 @@ TARGET_RECOVERY_DEVICE_MODULES := init_cannon
 
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # Recovery
