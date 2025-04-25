@@ -273,17 +273,18 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib64/lib3a.sensors.flicker.so',
         'vendor/lib64/libSQLiteModule_VER_ALL.so',
     ): blob_fixup()
-         .add_needed('liblog.so'),
+        .add_needed('liblog.so'),
 
     'vendor/lib64/libmnl.so' : blob_fixup()
-         .add_needed('libcutils.so'),
+        .add_needed('libcutils.so'),
          
     'vendor/lib64/libvidhance.so': blob_fixup()
         .add_needed('libcomparetf2_shim.so')
-        .add_needed('libdemangle.so')
+        .add_needed('libdemangle.so'),
         
     (
         'vendor/lib/libnvram.so',
+        'vendor/lib/libsysenv.so',
         'vendor/lib64/libnvram.so',
         'vendor/lib64/libsysenv.so',
         'vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-mtk-neuron',
