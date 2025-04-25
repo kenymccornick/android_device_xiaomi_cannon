@@ -989,7 +989,6 @@ vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.1.so
 # Media
 system/lib64/libvcodec_cap.so
 system/lib64/libvcodec_capenc.so
-vendor/bin/hw/android.hardware.media.c2@1.2-mediatek
 vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b
 vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc
 -vendor/etc/vintf/manifest/manifest_media_c2_V1_1_default.xml
@@ -1011,21 +1010,6 @@ vendor/lib/libOpenCL.so
 vendor/lib/libadpcmdec_mtk.so
 vendor/lib/libalacdec_mtk.so
 vendor/lib/libbwc.so
-vendor/lib/libcodec2_hidl@1.0.so
-vendor/lib/libcodec2_hidl@1.1.so
-vendor/lib/libcodec2_hidl@1.2.so
-vendor/lib/libcodec2_hidl_plugin.so
-vendor/lib/libcodec2_mtk_c2store.so
-vendor/lib/libcodec2_mtk_vdec.so
-vendor/lib/libcodec2_mtk_venc.so
-vendor/lib/libcodec2_soft_common.so
-vendor/lib/libcodec2_soft_mtk_alacdec.so
-vendor/lib/libcodec2_soft_mtk_apedec.so
-vendor/lib/libcodec2_soft_mtk_imaadpcmdec.so
-vendor/lib/libcodec2_soft_mtk_mp3dec.so
-vendor/lib/libcodec2_soft_mtk_msadpcmdec.so
-vendor/lib/libcodec2_vpp_qt_plugin.so
-vendor/lib/libcodec2_vpp_rs_plugin.so
 vendor/lib/libformatter.so
 vendor/lib/libgz_gp_client.so
 vendor/lib/libgz_uree.so
