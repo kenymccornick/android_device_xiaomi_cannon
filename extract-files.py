@@ -13,7 +13,6 @@ from extract_utils.fixups_blob import (
 from extract_utils.fixups_lib import (
     lib_fixup_remove_arch_suffix,
     lib_fixup_vendorcompat,
-    lib_fixup_remove,
     lib_fixups_user_type,
     libs_clang_rt_ubsan,
     libs_proto_3_9_1,
@@ -34,10 +33,10 @@ namespace_imports = [
 lib_fixups: lib_fixups_user_type = {
     libs_clang_rt_ubsan: lib_fixup_remove_arch_suffix,
     libs_proto_3_9_1: lib_fixup_vendorcompat,
-    ('libsink',): lib_fixup_remove,
 }
 
 blob_fixups: blob_fixups_user_type = {
+
     'system/priv-app/ImsService/ImsService.apk': blob_fixup()
         .apktool_patch('blob-patches/ImsService'),
 
@@ -47,8 +46,11 @@ blob_fixups: blob_fixups_user_type = {
     'system/lib64/libsource.so': blob_fixup()
         .add_needed('libui_shim.so'),
 
-    'system/lib64/libsink.so': blob_fixup()
+    'system/lib64/libsink-mtk.so': blob_fixup()
         .add_needed('libaudioclient_shim.so'),
+
+    'system/lib64/libimsma.so': blob_fixup()
+        .replace_needed('libsink.so', 'libsink-mtk.so'),        
 
     (
         'system/lib/libem_support_jni.so',

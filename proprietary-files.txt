@@ -1243,7 +1243,7 @@ system/lib64/libmtk_vt_service.so
 system/lib64/libmtk_vt_wrapper.so
 system/lib64/libmtkavenhancements.so
 system/lib64/libsignal.so
-system/lib64/libsink.so
+system/lib64/libsink.so:system/lib64/libsink-mtk.so;FIX_SONAME
 system/lib64/libsource.so
 system/lib64/libvt_avsync.so
 -system/priv-app/ImsService/ImsService.apk|6746e3d153c31eaaee468314ad618a7bfdeaa198|99af10a3f6f0f0d75b89ab632a361ce47e9e8e38
