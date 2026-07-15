@@ -70,10 +70,14 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib64/libSQLiteModule_VER_ALL.so',
     ): blob_fixup()
          .add_needed('liblog.so'),
+
+    'vendor/lib64/libmnl.so' : blob_fixup()
+         .add_needed('libcutils.so'),
          
-     'vendor/lib64/libmnl.so' : blob_fixup()
-         .add_needed('libcutils.so')
-         
+    'vendor/lib64/libvidhance.so': blob_fixup()
+        .add_needed('libcomparetf2_shim.so')
+        .add_needed('libdemangle.so')
+        
 }  # fmt: skip
 
 module = ExtractUtilsModule(
