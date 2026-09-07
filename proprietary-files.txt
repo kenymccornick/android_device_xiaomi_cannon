@@ -1,4 +1,4 @@
-# Unpinned blobs from cannong-user 12 SP1A.210812.016 V13.0.3.0.SJEMIXM release-keys
+# Unpinned blobs from cannong-user 12 SP1A.210812.016 V14.0.4.0.SJEMIXM release-keys
 
 # APU
 vendor/lib64/APUWareApusysServer.so
@@ -984,7 +984,7 @@ system/lib64/libvcodec_capenc.so
 vendor/bin/hw/android.hardware.media.c2@1.2-mediatek
 vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b
 vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc
--vendor/etc/vintf/manifest/manifest_media_c2_V1_2_default.xml
+-vendor/etc/vintf/manifest/manifest_media_c2_V1_1_default.xml
 vendor/etc/mtk_omx_core.cfg
 vendor/etc/mtk_platform_codecs_config.xml
 vendor/lib/AVCSecureVdecCA.so
