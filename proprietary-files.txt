@@ -972,7 +972,7 @@ vendor/etc/init/microtrust.bp_kmsetkey_ca.rc
 vendor/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc
 vendor/lib64/hw/kmsetkey.beanpod.so
 vendor/lib64/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so
-vendor/lib64/libTEECommon.so
+vendor/lib64/libTEECommon.so|5458ff1d9f19b74d739c5034b2c6da10504d9807
 vendor/lib64/libkmsetkey.so
 vendor/lib64/libteei_daemon_vfs.so
 vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.0.so
