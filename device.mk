@@ -145,7 +145,8 @@ PRODUCT_PACKAGES += \
     libfmq \
     libdrm.vendor \
     libhwc2on1adapter \
-    libhwc2onfbadapter
+    libhwc2onfbadapter \
+    libutilscallstack.vendor
 
 PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.displayfeature@1.0.vendor
@@ -284,12 +285,12 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
-PRODUCT_PACKAGES += \
-    android.hardware.power-service.mediatek-libperfmgr
+# PRODUCT_PACKAGES += \
+#    android.hardware.power-service.mediatek-libperfmgr
 
-PRODUCT_PACKAGES += \
-    libmtkperf_client_vendor \
-    libmtkperf_client
+#PRODUCT_PACKAGES += \
+#    libmtkperf_client_vendor \
+#    libmtkperf_client
 
 PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mtkpower@1.0.vendor \
@@ -464,7 +465,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf
 
 PRODUCT_PACKAGES += \
-    android.hardware.wifi@1.0-service-lazy \
+#    android.hardware.wifi@1.0-service-lazy \
     android.hardware.wifi.hostapd@1.0.vendor \
     android.hardware.wifi.hostapd@1.1.vendor \
     android.hardware.wifi.hostapd@1.2.vendor \
