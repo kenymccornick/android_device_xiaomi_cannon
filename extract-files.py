@@ -10,6 +10,12 @@ from extract_utils.fixups_blob import (
     blob_fixups_user_type,
 )
 
+from extract_utils.fixups_lib import (
+    lib_fixup_vendorcompat,
+    lib_fixups_user_type,
+    libs_proto_3_9_1,
+)
+
 from extract_utils.main import (
     ExtractUtils,
     ExtractUtilsModule,
@@ -20,6 +26,10 @@ namespace_imports = [
     'hardware/mediatek/libmtkperf_client',
     'hardware/xiaomi',
 ]
+
+lib_fixups: lib_fixups_user_type = {
+    libs_proto_3_9_1: lib_fixup_vendorcompat,
+}
 
 blob_fixups: blob_fixups_user_type = {
     'system/priv-app/ImsService/ImsService.apk': blob_fixup()
@@ -52,6 +62,7 @@ module = ExtractUtilsModule(
     'cannon',
     'xiaomi',
     blob_fixups=blob_fixups,
+    lib_fixups=lib_fixups,
     namespace_imports=namespace_imports,
 )
 
