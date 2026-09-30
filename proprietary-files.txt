@@ -1,6 +1,8 @@
 # Unpinned blobs from cannong-user 12 SP1A.210812.016 V14.0.4.0.SJEMIXM release-keys
 
 # APU
+vendor/lib/libapu_mdw.so
+vendor/lib/libapusys.so
 vendor/lib64/APUWareApusysServer.so
 vendor/lib64/APUWareUtilsServer.so
 vendor/lib64/APUWareXrpServer_v2.so
@@ -46,6 +48,9 @@ vendor/lib/libvow_ap_test_hh.so
 vendor/lib/libvow_ap_test_nn.so
 vendor/lib/vendor.mediatek.hardware.audio@6.1.so
 vendor/lib/vendor.mediatek.hardware.audio@7.1.so
+vendor/lib64/libspeechparser_vendor.so
+vendor/lib64/vendor.mediatek.hardware.audio@6.1.so
+vendor/lib64/vendor.mediatek.hardware.audio@7.1.so
 vendor/lib64/libmiStereoFactoryRemapLib.so
 
 # Audio configs
@@ -206,6 +211,9 @@ vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.2.so
 vendor/bin/hw/camerahalserver
 vendor/bin/rttv
 vendor/etc/init/camerahalserver.rc
+vendor/lib/libJpgEncPipe.so
+vendor/lib/libjpeg-alpha-oal_vendor.so
+vendor/lib/libjpeg-alpha_vendor.so
 vendor/lib64/hw/vendor.mediatek.hardware.camera.atms@1.0-impl.so
 vendor/lib64/hw/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so
 vendor/lib64/hw/vendor.mediatek.hardware.camera.ccap@1.0-impl.so
@@ -969,6 +977,7 @@ vendor/bin/teei_daemon
 vendor/etc/init/android.hardware.keymaster@4.1-service.beanpod.rc
 vendor/etc/init/microtrust.bp_kmsetkey_ca.rc
 vendor/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc
+vendor/lib/libTEECommon.so|0cd325ee2e3fe38b7b1ece94fbd2ce2fec080637
 vendor/lib64/hw/kmsetkey.beanpod.so
 vendor/lib64/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so
 vendor/lib64/libTEECommon.so|5458ff1d9f19b74d739c5034b2c6da10504d9807
@@ -1002,6 +1011,7 @@ vendor/lib/libOpenCL.so
 vendor/lib/libadpcmdec_mtk.so
 vendor/lib/libalacdec_mtk.so
 vendor/lib/libbwc.so
+vendor/lib/libcodec2_hidl@1.0.so
 vendor/lib/libcodec2_hidl@1.1.so
 vendor/lib/libcodec2_hidl@1.2.so
 vendor/lib/libcodec2_hidl_plugin.so
@@ -1048,6 +1058,7 @@ vendor/lib64/libOpenCL.so
 vendor/lib64/libadpcmdec_mtk.so
 vendor/lib64/libalacdec_mtk.so
 vendor/lib64/libbwc.so
+vendor/lib64/libcodec2_hidl@1.0.so
 vendor/lib64/libcodec2_hidl@1.1.so
 vendor/lib64/libcodec2_hidl@1.2.so
 vendor/lib64/libcodec2_hidl_plugin.so
@@ -1098,6 +1109,7 @@ vendor/lib64/libtflite_mtk.so
 # Secure element
 vendor/bin/hw/android.hardware.secure_element@1.0-service-mediatek
 vendor/bin/hw/vendor.microtrust.hardware.se@1.0-service
+vendor/lib/se_extn_client.so
 vendor/lib64/se_extn_client.so
 vendor/lib64/secure_element-impl.so
 
@@ -1397,6 +1409,8 @@ vendor/etc/init/mtk_agpsd_p.rc
 -vendor/etc/vintf/manifest/lbs_hidl_service@1.0.xml
 vendor/etc/mpe.conf
 vendor/etc/slp_conf
+vendor/lib/libapmonitor_vendor.so
+vendor/lib/vendor.mediatek.hardware.apmonitor@2.0.so
 vendor/lib64/hw/gps.default.so:vendor/lib64/hw/gps.mt6853.so
 vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so
 vendor/lib64/hw/android.hardware.gnss@2.1-impl-mediatek.so
