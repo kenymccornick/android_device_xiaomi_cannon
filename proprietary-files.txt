@@ -946,7 +946,6 @@ vendor/etc/init/vpud.rc
 vendor/lib/libvpu.so
 vendor/lib/libvpu5.so
 vendor/lib/libvpud_vcodec.so
-vendor/lib/libvpud_vcodec.so
 vendor/lib64/libvpu.so
 vendor/lib64/libvpu5.so
 
@@ -992,18 +991,11 @@ vendor/lib/HEVCSecureVdecCA.so
 vendor/lib/VP9SecureVdecCA.so
 vendor/lib/libAVCSecureVencCA.so
 vendor/lib/libHEVCdec_sa.ca7.android.so
-vendor/lib/libHEVCdec_sa.ca7.android.so
-vendor/lib/libMtkOmxAdpcmDec.so
 vendor/lib/libMtkOmxAdpcmDec.so
 vendor/lib/libMtkOmxAlacDec.so
-vendor/lib/libMtkOmxAlacDec.so
-vendor/lib/libMtkOmxApeDec.so
 vendor/lib/libMtkOmxApeDec.so
 vendor/lib/libMtkOmxCore.so
-vendor/lib/libMtkOmxCore.so
 vendor/lib/libMtkOmxGsmDec.so
-vendor/lib/libMtkOmxGsmDec.so
-vendor/lib/libMtkOmxMp3Dec.so
 vendor/lib/libMtkOmxMp3Dec.so
 vendor/lib/libMtkSpeechEnh.so
 vendor/lib/libOpenCL.so
@@ -1402,7 +1394,6 @@ vendor/bin/mnld
 vendor/bin/mtk_agpsd
 vendor/etc/init/android.hardware.gnss-service.mediatek.rc
 vendor/etc/init/init.gps_drv.rc
-vendor/etc/init/init.gps_drv.rc
 vendor/etc/init/lbs_hidl_service.rc
 vendor/etc/init/mtk_agpsd_p.rc
 -vendor/etc/vintf/manifest/gnss@2.1-service.xml:vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-mediatek.xml
@@ -1474,7 +1465,6 @@ system/lib64/libaudio_param_parser-sys.so
 system/lib64/libaudioutilmtk.so
 system/lib64/libem_aoltest_jni.so
 system/lib64/libem_audio_jni.so
-system/lib64/libem_audio_jni.so
 system/lib64/libem_support_jni.so
 system/lib64/libem_usb_jni.so
 system/lib64/libem_wifi_jni.so
@@ -1484,7 +1474,6 @@ system_ext/lib/libaudiotoolkit.so
 system_ext/lib64/libaudiotoolkit.so
 vendor/bin/em_hidl
 vendor/etc/init/em_hidl_user.rc
-vendor/lib/libaudiotoolkit_vendor.so
 vendor/lib64/libaudiotoolkit_vendor.so
 vendor/lib64/vendor.mediatek.hardware.engineermode@1.0.so
 vendor/lib64/vendor.mediatek.hardware.engineermode@1.1.so
@@ -1532,9 +1521,6 @@ vendor/lib64/libmtkshifter_vendor.so
 vendor/lib64/libmtkspparser.so
 vendor/lib64/libmtksysutils.so
 vendor/lib64/libmtktinyxml.so
-vendor/lib64/libtranslator_mapi_v3.0.so
-vendor/lib64/libtranslator_mdmi_v2.8.2.so
-vendor/lib64/libtranslator_utils.so
 vendor/lib64/vendor.mediatek.hardware.atci@1.0.so
 vendor/lib64/vendor.mediatek.hardware.clientapi@1.0.so
 vendor/lib64/vendor.mediatek.hardware.dmc@1.0.so
