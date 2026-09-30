@@ -16,6 +16,12 @@ from extract_utils.main import (
 )
 
 blob_fixups: blob_fixups_user_type = {
+    'system/priv-app/ImsService/ImsService.apk': blob_fixup()
+        .apktool_patch('blob-patches/ImsService'),
+
+    'system/priv-app/LPPeService/LPPeService.apk': blob_fixup()
+        .apktool_patch('blob-patches/LPPeService'),
+
     'vendor/bin/hw/android.hardware.thermal@2.0-service.mtk': blob_fixup()
         .replace_needed('libutils.so', 'libutils-v32.so')
         .replace_needed('libhidlbase.so', 'libhidlbase-v32.so'),
