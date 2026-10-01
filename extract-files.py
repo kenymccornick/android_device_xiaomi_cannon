@@ -41,6 +41,9 @@ blob_fixups: blob_fixups_user_type = {
     'system/priv-app/LPPeService/LPPeService.apk': blob_fixup()
         .apktool_patch('blob-patches/LPPeService'),
 
+    'system/lib64/libsource.so': blob_fixup()
+        .add_needed('libui_shim.so'),
+
     'vendor/bin/hw/android.hardware.thermal@2.0-service.mtk': blob_fixup()
         .replace_needed('libutils.so', 'libutils-v32.so')
         .replace_needed('libhidlbase.so', 'libhidlbase-v32.so'),
@@ -53,6 +56,19 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib64/hw/vendor.mediatek.hardware.pq@2.13-impl.so',
     ): blob_fixup()
         .replace_needed('libutils.so', 'libutils-v32.so'),
+
+    (
+        'vendor/bin/mnld',
+        'vendor/lib/libaalservice.so',
+        'vendor/lib64/libaalservice.so',
+        'vendor/lib/librgbwlightsensor.so',
+        'vendor/lib64/librgbwlightsensor.so',
+        'vendor/lib64/libcam.utils.sensorprovider.so',
+    ): blob_fixup()
+        .replace_needed(
+            'libsensorndkbridge.so',
+            'android.hardware.sensors@1.0-convert-shared.so',
+        ),
 
     'vendor/lib64/libmtkcam_featurepolicy.so': blob_fixup()
         .binary_regex_replace(
@@ -78,6 +94,23 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libcomparetf2_shim.so')
         .add_needed('libdemangle.so')
         
+    (
+        'vendor/lib/libnvram.so',
+        'vendor/lib64/libnvram.so',
+        'vendor/lib64/libsysenv.so',
+        'vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-mtk-neuron',
+    ) : blob_fixup()
+         .add_needed('libbase_shim.so'),
+
+    (
+        'vendor/bin/hw/android.hardware.gnss-service.mediatek',
+        'vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so',
+    ): blob_fixup()
+        .replace_needed(
+            'android.hardware.gnss-V1-ndk_platform.so',
+            'android.hardware.gnss-V1-ndk.so',
+        ),
+         
 }  # fmt: skip
 
 module = ExtractUtilsModule(
