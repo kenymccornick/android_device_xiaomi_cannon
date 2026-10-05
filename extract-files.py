@@ -44,6 +44,9 @@ blob_fixups: blob_fixups_user_type = {
     'system/lib64/libsource.so': blob_fixup()
         .add_needed('libui_shim.so'),
 
+    'system/lib64/libsink.so': blob_fixup()
+        .add_needed('libaudioclient_shim.so'),
+
     'vendor/bin/hw/android.hardware.thermal@2.0-service.mtk': blob_fixup()
         .replace_needed('libutils.so', 'libutils-v32.so')
         .replace_needed('libhidlbase.so', 'libhidlbase-v32.so'),
