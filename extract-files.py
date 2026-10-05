@@ -99,6 +99,8 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib64/libnvram.so',
         'vendor/lib64/libsysenv.so',
         'vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-mtk-neuron',
+        'vendor/lib/nfc_nci.nqx.default.hw.so',
+        'vendor/lib64/nfc_nci.nqx.default.hw.so',
     ) : blob_fixup()
          .add_needed('libbase_shim.so'),
 
