@@ -24,6 +24,7 @@ from extract_utils.main import (
 )
 
 namespace_imports = [
+    'device/xiaomi/cannon',
     'hardware/mediatek',
     'hardware/mediatek/libmtkperf_client',
     'hardware/xiaomi',
@@ -46,6 +47,12 @@ blob_fixups: blob_fixups_user_type = {
 
     'system/lib64/libsink.so': blob_fixup()
         .add_needed('libaudioclient_shim.so'),
+
+    (
+        'system/lib/libem_support_jni.so',
+        'system/lib64/libem_support_jni.so',
+    ): blob_fixup()
+        .add_needed('libgui_cannon_shim.so'),
 
     'vendor/bin/hw/android.hardware.thermal@2.0-service.mtk': blob_fixup()
         .replace_needed('libutils.so', 'libutils-v32.so')
