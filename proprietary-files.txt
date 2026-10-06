@@ -35,12 +35,12 @@ vendor/lib/libawinicsmartpaparse.so
 vendor/lib/libbessound_hd_mtk_vendor.so
 vendor/lib/libblisrc32_vendor.so
 vendor/lib/libcvsd_mtk.so
-vendor/lib/libfvaudio.so
+vendor/lib/libfvaudio.so;FIX_SONAME
 vendor/lib/libnxp_extamp_intf.so
 vendor/lib/libnxprecord.so
 vendor/lib/libnxpspeech.so
 vendor/lib/librt_extamp_intf.so
-vendor/lib/libspeech_enh_lib.so
+vendor/lib/libspeech_enh_lib.so;FIX_SONAME
 vendor/lib/libspeechparser_vendor.so
 vendor/lib/libvow_ap_test_aa.so
 vendor/lib/libvow_ap_test_ha.so
@@ -427,7 +427,7 @@ vendor/lib64/libarcsoft_portrait_lighting.so
 vendor/lib64/libarcsoft_portrait_lighting_c.so
 vendor/lib64/libarcsoft_supernight.so
 vendor/lib64/libc++_shared.so
-vendor/lib64/libc++_shared_vf.so
+vendor/lib64/libc++_shared_vf.so;FIX_SONAME
 vendor/lib64/libcam.ArcCamEngine.so
 vendor/lib64/libcam.afhal.so
 vendor/lib64/libcam.chdr.so
@@ -958,8 +958,8 @@ vendor/lib64/libvpu.so
 vendor/lib64/libvpu5.so
 
 # Fingerprint
-vendor/lib64/hw/fingerprint.fpc.so:vendor/lib64/hw/fingerprint.fpc.default.so
-vendor/lib64/hw/fingerprint.goodix.so:vendor/lib64/hw/fingerprint.goodix.default.so
+vendor/lib64/hw/fingerprint.fpc.so:vendor/lib64/hw/fingerprint.fpc.default.so;FIX_SONAME
+vendor/lib64/hw/fingerprint.goodix.so:vendor/lib64/hw/fingerprint.goodix.default.so;FIX_SONAME
 vendor/lib64/libgf_ca.so
 vendor/lib64/libgf_hal.so
 vendor/lib64/libgoodixhwfingerprint.so
@@ -1090,7 +1090,7 @@ vendor/lib64/libneuron_adapter.so
 vendor/lib64/libneuron_graph_delegate.mtk.so
 vendor/lib64/libneuron_platform.so
 vendor/lib64/libneuropilot_hal_utils.so
-vendor/lib64/libnir_neon_driver_ndk.mtk.vndk.so
+vendor/lib64/libnir_neon_driver_ndk.mtk.vndk.so;FIX_SONAME
 vendor/lib64/libtflite_mtk.so
 
 # Secure element
@@ -1294,7 +1294,7 @@ vendor/etc/init/vendor.microtrust.hardware.soter@1.0-service.rc
 vendor/lib64/vendor.microtrust.hardware.soter@1.0.so
 
 # Soundtrigger
-vendor/lib/hw/sound_trigger.primary.default.so:vendor/lib/hw/sound_trigger.primary.mt6853.so
+vendor/lib/hw/sound_trigger.primary.default.so:vendor/lib/hw/sound_trigger.primary.mt6853.so;FIX_SONAME
 
 # Thermal
 system_root/init.mi_thermald.rc:vendor/etc/init/init.mi_thermald.rc
@@ -1398,7 +1398,7 @@ vendor/etc/mpe.conf
 vendor/etc/slp_conf
 vendor/lib/libapmonitor_vendor.so
 vendor/lib/vendor.mediatek.hardware.apmonitor@2.0.so
-vendor/lib64/hw/gps.default.so:vendor/lib64/hw/gps.mt6853.so
+vendor/lib64/hw/gps.default.so:vendor/lib64/hw/gps.mt6853.so;FIX_SONAME
 vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so
 vendor/lib64/hw/android.hardware.gnss@2.1-impl-mediatek.so
 vendor/lib64/lbs_hidl_service-impl.so
