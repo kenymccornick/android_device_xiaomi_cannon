@@ -6,3 +6,36 @@
 
 soong_namespace {
 }
+
+prebuilt_hidl_interfaces {
+    name: "vendor_mediatek_hardware_engineermode_interfaces",
+    interfaces: [
+        "vendor.mediatek.hardware.engineermode@1.0::IEmd",
+        "vendor.mediatek.hardware.engineermode@1.1::IEmd",
+        "vendor.mediatek.hardware.engineermode@1.2::IEmd",
+        "vendor.mediatek.hardware.engineermode@1.3::IEmd",
+    ],
+}
+
+prebuilt_hidl_interfaces {
+    name: "vendor_mediatek_hardware_dmc_interfaces",
+    interfaces: [
+        "vendor.mediatek.hardware.dmc@1.0::IDmcService",
+        "vendor.mediatek.hardware.dmc@1.1::IDmcService",
+        "vendor.mediatek.hardware.dmc@1.2::IDmcService",
+    ],
+}
+
+prebuilt_hidl_interfaces {
+    name: "vendor_mediatek_hardware_apmonitor_interfaces",
+    interfaces: [
+        "vendor.mediatek.hardware.apmonitor@2.0::IApmService",
+    ],
+}
+
+prebuilt_hidl_interfaces {
+    name: "vendor_mediatek_hardware_mdmonitor_interfaces",
+    interfaces: [
+        "vendor.mediatek.hardware.mdmonitor@1.0::IMDMonitorService",
+    ],
+}
